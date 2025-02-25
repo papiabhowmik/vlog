@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+}
+
+nav {
+  padding: 0.5% 3%;
+  background: wheat;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+nav h1 {
+  font-size: 50px;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  margin-left: 3%;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  list-style: none;
+  display: inline;
+}
+nav ul li a {
+  font-size: 23px;
+  font-family: "Playfair Display", serif;
+  text-decoration: none;
+  margin-right: 15px;
+  color: black;
+  position: relative;
+  transition: 0.4s ease;
+}
+nav ul li a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  height: 1px;
+  width: 0;
+  background: #bb5a3a;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  transition: 0.4s linear;
+}
+nav ul li a.active {
+  color: #bb5a3a;
+}
+nav ul li a.active::after {
+  width: 100%;
+}
+nav ul li svg {
+  font-size: 43px;
+  color: #bb5a3a;
+}
+nav ul a {
+  margin-left: 4px;
+}
+
+.bg-body-tertiary {
+  background-color: wheat !important;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+  justify-content: end;
+}
+
+.navbar-expand-lg {
+  flex-wrap: nowrap;
+  justify-content: end;
+}
+
+.navbar-expand-lg {
+  flex-wrap: nowrap;
+  justify-content: end;
+}
+
+.navbar > .container {
+  margin: 0;
+}
+
+.navbar-expand-lg {
+  justify-content: end !important;
+}
+
+@media (max-width: 992px) {
+  nav h1 {
+    font-size: 28px;
+    z-index: 3;
+    left: 4%;
+    top: 30px;
+    transform: translate(0, -50%);
+  }
+  .navbar .container {
+    padding: 0;
+    justify-content: end !important;
+    align-items: end !important;
+    flex-direction: column;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    justify-content: center;
+  }
+  .navbar-collapse {
+    width: 100%;
+  }
+  .activeMobileHeight {
+    height: 40vh;
+    transition: 0.4s;
+  }
+  .inActiveMobileHeight {
+    height: 0;
+    overflow: hidden;
+    transition: 0.2s;
+  }
+  nav ul li {
+    margin-bottom: 10px;
+  }
+  nav ul a {
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
